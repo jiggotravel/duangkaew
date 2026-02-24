@@ -2,30 +2,24 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>หนังสือที่ระลึกชีวประวัติ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    font-family: "Georgia", "Tahoma", serif;
-    background-color: #fdfcf8;
+    font-family: 'Sarabun', sans-serif;
+    background-color: #ffffff;
     color: #444;
     text-align: center;
 }
 
 .container {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 80px 40px;
-    background-color: #ffffff;
-    border: 1px solid #e8d9a8;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.cover {
-    width: 260px;
-    margin-bottom: 40px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .gold-line {
@@ -36,72 +30,60 @@ body {
 }
 
 h1 {
-    font-size: 34px;
-    color: #b38b1d;
-    font-weight: normal;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    font-size: 42px;
+    color: #b9972b;
+    font-weight: 600;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
-    margin-bottom: 45px;
-    line-height: 1.8;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 40px;
-    font-size: 16px;
-    margin: 20px 10px;
-    background: linear-gradient(to right, #bfa13a, #e6c76b);
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(191,161,58,0.3);
-}
-
-.button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(191,161,58,0.4);
-}
-
-.pdf-viewer {
-    margin-top: 50px;
-    border: 1px solid #e8d9a8;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-}
-
-.footer {
-    margin-top: 80px;
-    font-size: 14px;
-    color: #999;
+    margin-bottom: 50px;
     line-height: 1.6;
 }
 
-.top-border {
-    height: 4px;
-    background: linear-gradient(to right, #c5a84a, #e6c76b, #c5a84a);
+.cover-image {
+    width: 75%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.cover-image:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+.read-text {
+    margin-top: 15px;
+    color: #b9972b;
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 70px;
+    font-size: 16px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 32px; }
+    .subtitle { font-size: 18px; }
+    .cover-image { width: 90%; }
 }
 </style>
-
 </head>
-<body>
 
-<div class="top-border"></div>
+<body>
 
 <div class="container">
 
-    <img src="cover.jpg" class="cover" alt="ปกหนังสือ">
-
     <div class="gold-line"></div>
 
-    <h1>
-        ดวงแก้ว พิทยากรศิลป์<br>
-        ๒๔๘๘ - ๒๕๕๙
-    </h1>
+    <h1>ดวงแก้ว พิทยากรศิลป์ ๒๔๘๘ - ๒๕๕๙</h1>
 
     <div class="gold-line"></div>
 
@@ -110,20 +92,13 @@ h1 {
         ผู้ก่อตั้งพิพิธภัณฑ์หุ่นขี้ผึ้งไทย
     </p>
 
-    <!-- ปุ่มดาวน์โหลด -->
-    <a href="https://drive.google.com/uc?export=download&id=1P9lhzzZpNMoqhNi32ZgoQs14OlJKtdaN" 
-       class="button">
-        ดาวน์โหลดไฟล์ (PDF)
+    <!-- กดเพื่อเปิดอ่านออนไลน์ -->
+    <a href="book.pdf" target="_blank">
+        <img src="cover.jpg" alt="หน้าปกหนังสือ" class="cover-image">
     </a>
 
-    <!-- ตัวแสดงผล PDF -->
-    <div class="pdf-viewer">
-        <iframe 
-            src="https://drive.google.com/file/d/1P9lhzzZpNMoqhNi32ZgoQs14OlJKtdaN/preview" 
-            width="100%" 
-            height="800px" 
-            allow="autoplay">
-        </iframe>
+    <div class="read-text">
+        คลิกที่ภาพเพื่อเปิดอ่านออนไลน์
     </div>
 
     <div class="footer">
