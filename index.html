@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>หนังสือที่ระลึกชีวประวัติ</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Georgia", "Tahoma", serif;
+    background-color: #fdfcf8;
+    color: #444;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 80px 40px;
+    background-color: #ffffff;
+    border: 1px solid #e8d9a8;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.cover {
+    width: 260px;
+    margin-bottom: 40px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.gold-line {
+    width: 140px;
+    height: 2px;
+    background: linear-gradient(to right, #c5a84a, #e6c76b, #c5a84a);
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 34px;
+    color: #b38b1d;
+    font-weight: normal;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 45px;
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 16px;
+    margin: 20px 10px;
+    background: linear-gradient(to right, #bfa13a, #e6c76b);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(191,161,58,0.3);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(191,161,58,0.4);
+}
+
+.pdf-viewer {
+    margin-top: 50px;
+    border: 1px solid #e8d9a8;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.footer {
+    margin-top: 80px;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.6;
+}
+
+.top-border {
+    height: 4px;
+    background: linear-gradient(to right, #c5a84a, #e6c76b, #c5a84a);
+}
+</style>
+
+</head>
+<body>
+
+<div class="top-border"></div>
+
+<div class="container">
+
+    <img src="cover.jpg" class="cover" alt="ปกหนังสือ">
+
+    <div class="gold-line"></div>
+
+    <h1>
+        ดวงแก้ว พิทยากรศิลป์<br>
+        ๒๔๘๘ - ๒๕๕๙
+    </h1>
+
+    <div class="gold-line"></div>
+
+    <p class="subtitle">
+        ศิลปินผู้มีผลงานดีเด่นด้านวัฒนธรรม สาขาทัศนศิลป์ (ประติมากรรม)<br>
+        ผู้ก่อตั้งพิพิธภัณฑ์หุ่นขี้ผึ้งไทย
+    </p>
+
+    <!-- ปุ่มดาวน์โหลด -->
+    <a href="https://drive.google.com/uc?export=download&id=1P9lhzzZpNMoqhNi32ZgoQs14OlJKtdaN" 
+       class="button">
+        ดาวน์โหลดไฟล์ (PDF)
+    </a>
+
+    <!-- ตัวแสดงผล PDF -->
+    <div class="pdf-viewer">
+        <iframe 
+            src="https://drive.google.com/file/d/1P9lhzzZpNMoqhNi32ZgoQs14OlJKtdaN/preview" 
+            width="100%" 
+            height="800px" 
+            allow="autoplay">
+        </iframe>
+    </div>
+
+    <div class="footer">
+        จัดทำโดยครอบครัวพิทยากรศิลป์<br>
+        กรกฎาคม ๒๕๖๐
+    </div>
+
+</div>
+
+</body>
+</html>
