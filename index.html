@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>หนังสือที่ระลึกชีวประวัติ</title>
+<title>หนังสือที่ระลึกงานพระราชทานเพลิงศพ (เป็นกรณีพิเศษ) นายดวงแก้ว พิทยากรศิลป์</title>
 
+<!-- ฟอนต์ไทย TH Sarabun -->
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -63,6 +64,31 @@ h1 {
     font-size: 18px;
 }
 
+/* ปุ่มดาวน์โหลดหรู */
+.download-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b9972b;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: 
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(to right, #c5a84a, #e6c76b, #c5a84a) border-box;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(185,151,43,0.15);
+}
+
+.download-btn:hover {
+    background: linear-gradient(to right, #c5a84a, #e6c76b);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(185,151,43,0.25);
+}
+
 .footer {
     margin-top: 70px;
     font-size: 16px;
@@ -83,7 +109,7 @@ h1 {
 
     <div class="gold-line"></div>
 
-    <h1>ดวงแก้ว พิทยากรศิลป์ ๒๔๘๘ - ๒๕๕๙</h1>
+    <h1>ดวงแก้ว พิทยากรศิลป์<br>2488-2559</h1>
 
     <div class="gold-line"></div>
 
@@ -93,13 +119,18 @@ h1 {
     </p>
 
     <!-- กดเพื่อเปิดอ่านออนไลน์ -->
-    <a href="book.pdf" target="_blank">
+    <a href="https://drive.google.com/file/d/1P9lhzzZpNMoqhNi32ZgoQs14OlJKtdaN/preview" target="_blank">
         <img src="cover.jpg" alt="หน้าปกหนังสือ" class="cover-image">
     </a>
 
     <div class="read-text">
         คลิกที่ภาพเพื่อเปิดอ่านออนไลน์
     </div>
+
+    <!-- ปุ่มดาวน์โหลด -->
+    <a href="https://drive.google.com/uc?export=download&id=1P9lhzzZpNMoqhNi32ZgoQs14OlJKtdaN" class="download-btn">
+        ดาวน์โหลด PDF
+    </a>
 
     <div class="footer">
         จัดทำโดยครอบครัวพิทยากรศิลป์<br>
